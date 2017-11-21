@@ -7,7 +7,7 @@
 
     <div id="all">
 
-        <header>
+        <header id="header" class="fixed-top nav-hidden">
 
           {{ partial "nav.html" . }}
 
@@ -26,23 +26,12 @@
 
             {{ else }}
 
-            <div class="container">
 
-                <div class="row">
-
-                    <div class="col-md-12">
 
                         <div>
                           {{ .Content }}
                         </div>
 
-                    </div>
-
-                </div>
-                <!-- /.row -->
-
-            </div>
-            <!-- /.container -->
 
             {{ end }}
         </div>
